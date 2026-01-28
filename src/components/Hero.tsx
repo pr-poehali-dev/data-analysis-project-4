@@ -1,5 +1,6 @@
 import { useScroll, useTransform, motion } from "framer-motion";
 import { useRef } from "react";
+import CallbackForm from "@/components/CallbackForm";
 
 export default function Hero() {
   const container = useRef<HTMLDivElement>(null);
@@ -19,8 +20,8 @@ export default function Hero() {
         className="absolute inset-0 w-full h-full"
       >
         <img
-          src="/images/mountain-landscape.jpg"
-          alt="Mountain landscape"
+          src="https://cdn.poehali.dev/projects/313ee654-585a-476a-b6e6-a522aa083d68/files/992851e8-6e90-4f75-b700-638360bfc66d.jpg"
+          alt="Грузчики за работой"
           className="w-full h-full object-cover"
         />
       </motion.div>
@@ -29,9 +30,10 @@ export default function Hero() {
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6">
           ГРУЗЧИКИ В НОВОСИБИРСКЕ
         </h1>
-        <p className="text-lg md:text-xl max-w-2xl mx-auto px-6 opacity-90">
+        <p className="text-lg md:text-xl max-w-2xl mx-auto px-6 opacity-90 mb-8">
           Профессиональные грузчики, разнорабочие и уборщицы. Быстро, надёжно, качественно.
         </p>
+        <CallbackForm />
       </div>
     </div>
   );
